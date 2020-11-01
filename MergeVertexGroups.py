@@ -11,6 +11,7 @@ bl_info = {
 }
 
 class MESH_OT_vertex_group_merge(bpy.types.Operator):
+    """For the currently selected vertex group, add the weights of the vertex group below"""
     bl_idname = "mesh.vertex_group_merge"
     bl_label = "Merge Vertex Groups"
     bl_options = {"REGISTER", "UNDO"}

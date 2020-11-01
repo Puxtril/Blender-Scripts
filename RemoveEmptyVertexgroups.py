@@ -11,6 +11,7 @@ bl_info = {
 }
 
 class MESH_OT_vertex_group_remove_empty(bpy.types.Operator):
+    """From the selected object, remove all vertex groups with 0 assigned vertex weights"""
     bl_idname = "mesh.vertex_group_remove_empty"
     bl_label = "Remove Empty Groups"
     bl_options = {"REGISTER", "UNDO"}
